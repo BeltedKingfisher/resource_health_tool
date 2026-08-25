@@ -220,3 +220,4 @@ node_modules
 
 /data/export.json
 /data/outputs
+/data/broken_link_lookup.json
