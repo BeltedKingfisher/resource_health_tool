@@ -1,0 +1,187 @@
+{
+  "entries": [
+    {
+      "metadata": { "tags": [], "concepts": [] },
+      "sys": {
+        "id": "sampleCategory001",
+        "type": "Entry",
+        "createdAt": "2021-01-15T12:00:00.000Z",
+        "updatedAt": "2021-01-15T12:00:00.000Z",
+        "environment": { "sys": { "id": "master", "type": "Link", "linkType": "Environment" } },
+        "contentType": { "sys": { "type": "Link", "linkType": "ContentType", "id": "category" } }
+      },
+      "fields": {
+        "name": { "en-US": "7.7 Information on Sample Health Services" },
+        "description": { "en-US": "Organizations providing general sample health information." },
+        "sortNumber": { "en-US": 7.7 }
+      }
+    },
+    {
+      "metadata": { "tags": [], "concepts": [] },
+      "sys": {
+        "id": "sampleCategory002",
+        "type": "Entry",
+        "createdAt": "2021-01-15T12:00:00.000Z",
+        "updatedAt": "2021-01-15T12:00:00.000Z",
+        "environment": { "sys": { "id": "master", "type": "Link", "linkType": "Environment" } },
+        "contentType": { "sys": { "type": "Link", "linkType": "ContentType", "id": "category" } }
+      },
+      "fields": {
+        "name": { "en-US": "3.2 Sample Housing Assistance" },
+        "description": { "en-US": "Organizations providing sample housing support." },
+        "sortNumber": { "en-US": 3.2 }
+      }
+    },
+    {
+      "metadata": { "tags": [], "concepts": [] },
+      "sys": {
+        "id": "sampleWebsite001",
+        "type": "Entry",
+        "createdAt": "2021-02-01T09:00:00.000Z",
+        "updatedAt": "2021-02-01T09:00:00.000Z",
+        "environment": { "sys": { "id": "master", "type": "Link", "linkType": "Environment" } },
+        "contentType": { "sys": { "type": "Link", "linkType": "ContentType", "id": "associatedWebsite" } }
+      },
+      "fields": {
+        "url": { "en-US": "https://www.example-healthcenter.org/" },
+        "description": { "en-US": "Website" }
+      }
+    },
+    {
+      "metadata": { "tags": [], "concepts": [] },
+      "sys": {
+        "id": "sampleWebsite002",
+        "type": "Entry",
+        "createdAt": "2021-02-01T09:00:00.000Z",
+        "updatedAt": "2021-02-01T09:00:00.000Z",
+        "environment": { "sys": { "id": "master", "type": "Link", "linkType": "Environment" } },
+        "contentType": { "sys": { "type": "Link", "linkType": "ContentType", "id": "associatedWebsite" } }
+      },
+      "fields": {
+        "url": { "en-US": "https://www.example-brokenlink.org/" },
+        "description": { "en-US": "" }
+      }
+    },
+    {
+      "metadata": { "tags": [], "concepts": [] },
+      "sys": {
+        "id": "samplePhone001",
+        "type": "Entry",
+        "createdAt": "2021-02-01T09:00:00.000Z",
+        "updatedAt": "2021-02-01T09:00:00.000Z",
+        "environment": { "sys": { "id": "master", "type": "Link", "linkType": "Environment" } },
+        "contentType": { "sys": { "type": "Link", "linkType": "ContentType", "id": "associatedPhoneNumber" } }
+      },
+      "fields": {
+        "number": { "en-US": "1-314-555-0100" },
+        "extension": { "en-US": "" },
+        "description": { "en-US": "Main line" }
+      }
+    },
+    {
+      "metadata": { "tags": [], "concepts": [] },
+      "sys": {
+        "id": "samplePhone002",
+        "type": "Entry",
+        "createdAt": "2021-02-01T09:00:00.000Z",
+        "updatedAt": "2021-02-01T09:00:00.000Z",
+        "environment": { "sys": { "id": "master", "type": "Link", "linkType": "Environment" } },
+        "contentType": { "sys": { "type": "Link", "linkType": "ContentType", "id": "associatedPhoneNumber" } }
+      },
+      "fields": {
+        "number": { "en-US": "314-555-0175" },
+        "extension": { "en-US": "" },
+        "description": { "en-US": "" }
+      }
+    },
+    {
+      "metadata": { "tags": [], "concepts": [] },
+      "sys": {
+        "id": "sampleResource001",
+        "type": "Entry",
+        "createdAt": "2022-03-03T23:12:15.497Z",
+        "updatedAt": "2026-06-01T05:32:39.632Z",
+        "environment": { "sys": { "id": "master", "type": "Link", "linkType": "Environment" } },
+        "contentType": { "sys": { "type": "Link", "linkType": "ContentType", "id": "resource" } }
+      },
+      "fields": {
+        "name": { "en-US": "Example Community Health Center" },
+        "categories": { "en-US": [
+          { "sys": { "type": "Link", "linkType": "Entry", "id": "sampleCategory001" } }
+        ]},
+        "description": { "en-US": "Example Community Health Center offers free and low-cost primary care, mental health counseling, and case management. Walk-ins are welcome Monday through Friday. Call 1-314-555-0100 for an appointment or more information." },
+        "searchDescription": { "en-US": "Free and low-cost primary care and mental health services." },
+        "urlSlug": { "en-US": "example-community-health-center" },
+        "inOperation": { "en-US": "In Operation" },
+        "websites": { "en-US": [
+          { "sys": { "type": "Link", "linkType": "Entry", "id": "sampleWebsite001" } }
+        ]},
+        "phoneNumbers": { "en-US": [
+          { "sys": { "type": "Link", "linkType": "Entry", "id": "samplePhone001" } }
+        ]},
+        "hours": { "en-US": "Mon-Fri 9am-5pm" },
+        "claimedByOwner": { "en-US": true },
+        "verifiedForAccurateInfo": { "en-US": true },
+        "lastVerifiedOn": { "en-US": "2026-06-01" }
+      }
+    },
+    {
+      "metadata": { "tags": [], "concepts": [] },
+      "sys": {
+        "id": "sampleResource002",
+        "type": "Entry",
+        "createdAt": "2020-05-10T10:00:00.000Z",
+        "updatedAt": "2023-01-01T00:00:00.000Z",
+        "environment": { "sys": { "id": "master", "type": "Link", "linkType": "Environment" } },
+        "contentType": { "sys": { "type": "Link", "linkType": "ContentType", "id": "resource" } }
+      },
+      "fields": {
+        "name": { "en-US": "example outreach group" },
+        "categories": { "en-US": [
+          { "sys": { "type": "Link", "linkType": "Entry", "id": "sampleCategory002" } }
+        ]},
+        "description": { "en-US": "We help people." },
+        "searchDescription": { "en-US": "" },
+        "urlSlug": { "en-US": "example-outreach-group" },
+        "inOperation": { "en-US": "In Operation" },
+        "websites": { "en-US": [
+          { "sys": { "type": "Link", "linkType": "Entry", "id": "sampleWebsite002" } }
+        ]},
+        "phoneNumbers": { "en-US": [
+          { "sys": { "type": "Link", "linkType": "Entry", "id": "samplePhone002" } }
+        ]},
+        "hours": { "en-US": "" },
+        "claimedByOwner": { "en-US": false },
+        "verifiedForAccurateInfo": { "en-US": false },
+        "lastVerifiedOn": { "en-US": null }
+      }
+    },
+    {
+      "metadata": { "tags": [], "concepts": [] },
+      "sys": {
+        "id": "sampleResource003",
+        "type": "Entry",
+        "createdAt": "2019-08-20T10:00:00.000Z",
+        "updatedAt": "2019-08-20T10:00:00.000Z",
+        "environment": { "sys": { "id": "master", "type": "Link", "linkType": "Environment" } },
+        "contentType": { "sys": { "type": "Link", "linkType": "ContentType", "id": "resource" } }
+      },
+      "fields": {
+        "name": { "en-US": "Sample Permanently Closed Org" },
+        "categories": { "en-US": [
+          { "sys": { "type": "Link", "linkType": "Entry", "id": "sampleCategory001" } }
+        ]},
+        "description": { "en-US": "This organization is no longer operating. Please see other listings for similar services in the area." },
+        "searchDescription": { "en-US": "Closed organization, kept for historical record." },
+        "urlSlug": { "en-US": "sample-permanently-closed-org" },
+        "inOperation": { "en-US": "Permanently Closed" },
+        "websites": { "en-US": [] },
+        "phoneNumbers": { "en-US": [] },
+        "hours": { "en-US": "" },
+        "claimedByOwner": { "en-US": false },
+        "verifiedForAccurateInfo": { "en-US": false },
+        "lastVerifiedOn": { "en-US": null }
+      }
+    }
+  ]
+}
