@@ -40,7 +40,7 @@ def main():
     run(["python3", "scripts/build_broken_link_lookup.py"])
 
     run_check_command = ["python3", "scripts/run_check.py", "--limit", str(args.limit)]
-    for status in args.exclude_status:
+    if args.exclude_status:
         run_check_command += ["--exclude-status"] + args.exclude_status
 
     run(run_check_command)
