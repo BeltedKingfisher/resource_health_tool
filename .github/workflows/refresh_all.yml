@@ -20,7 +20,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
 
       - name: Install dependencies
         run: |
@@ -32,7 +32,7 @@ jobs:
         env:
             CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
             CONTENTFUL_MANAGEMENT_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_MANAGEMENT_ACCESS_TOKEN }}
-        run: python3 scripts/refresh_all.py
+        run: python3 scripts/refresh_all.py --exclude-status "Permanently Closed" "Temporarily Closed"
 
       - name: Push outputs to private data repo
         env:
