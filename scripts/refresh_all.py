@@ -32,10 +32,13 @@ MANAGEMENT_TOKEN = os.environ["CONTENTFUL_MANAGEMENT_ACCESS_TOKEN"]
 def run(command: list[str]) -> None:
     print(f"Running: {' '.join(command)}")
     result = subprocess.run(command, check=False, capture_output=True, text=True)
-    print(result.stdout)
-    print(result.stderr)
     if result.returncode != 0:
-        raise RuntimeError(f"Command failed: {' '.join(command)}")
+        raise RuntimeError(
+            f"Command failed: {' '.join(command)}\n"
+            f"--- stdout ---\n{result.stdout}\n"
+            f"--- stderr ---\n{result.stderr}"
+        )
+    print(result.stdout)
 
 def main():
     args = parse_args()
