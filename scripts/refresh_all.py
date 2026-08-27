@@ -50,7 +50,8 @@ def main():
         "--environment-id", "master",
         "--export-dir", "data",
         "--content-file", "export.json",
-        "--skip-webhooks"
+        "--skip-webhooks",
+        "--skip-roles"
     ])
     run(["python3", "scripts/build_broken_link_lookup.py"])
 
