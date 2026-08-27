@@ -26,6 +26,7 @@ jobs:
         run: |
             pip install -e . --break-system-packages
             pip install python-dotenv --break-system-packages
+            pip install aiohttp
             npm install contentful-cli
         
       - name: Run refresh pipeline
