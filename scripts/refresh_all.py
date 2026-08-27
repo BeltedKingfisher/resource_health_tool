@@ -25,9 +25,17 @@ SPACE_ID = os.environ["CONTENTFUL_SPACE_ID"]
 MANAGEMENT_TOKEN = os.environ["CONTENTFUL_MANAGEMENT_ACCESS_TOKEN"]
 
 
+# def run(command: list[str]) -> None:
+#     print(f"Running: {' '.join(command)}")
+#     subprocess.run(command, check=True)
+
 def run(command: list[str]) -> None:
     print(f"Running: {' '.join(command)}")
-    subprocess.run(command, check=True)
+    result = subprocess.run(command, check=False, capture_output=True, text=True)
+    print(result.stdout)
+    print(result.stderr)
+    if result.returncode != 0:
+        raise RuntimeError(f"Command failed: {' '.join(command)}")
 
 def main():
     args = parse_args()
