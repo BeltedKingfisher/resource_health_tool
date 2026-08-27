@@ -49,7 +49,8 @@ def main():
         "--management-token", MANAGEMENT_TOKEN,
         "--environment-id", "master",
         "--export-dir", "data",
-        "--content-file", "export.json"
+        "--content-file", "export.json",
+        "--skip-webhooks"
     ])
     run(["python3", "scripts/build_broken_link_lookup.py"])
 
