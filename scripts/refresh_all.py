@@ -22,6 +22,8 @@ def parse_args():
     return parser.parse_args()
 
 SPACE_ID = os.environ["CONTENTFUL_SPACE_ID"]
+MANAGEMENT_TOKEN = os.environ["CONTENTFUL_MANAGEMENT_ACCESS_TOKEN"]
+
 
 def run(command: list[str]) -> None:
     print(f"Running: {' '.join(command)}")
@@ -33,6 +35,7 @@ def main():
     run([
         "npx", "contentful", "space", "export",
         "--space-id", SPACE_ID,
+        "--management-token", MANAGEMENT_TOKEN,
         "--environment-id", "master",
         "--export-dir", "data",
         "--content-file", "export.json"
